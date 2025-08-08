@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /generate-icons.html
+Allow: /styles/
+Allow: /js/
+Allow: /images/
+
+# 禁止访问后台管理页面
+Disallow: /admin.html
+
+# 禁止访问系统文件
+Disallow: /.git/
+Disallow: /.DS_Store
+
+# 网站地图
+Sitemap: https://github.com/52-lian/Web-Zhanqu/sitemap.xml
+
+# 爬取延迟
+Crawl-delay: 1

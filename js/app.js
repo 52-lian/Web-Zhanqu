@@ -975,6 +975,8 @@ class QianYueApp {
         
         return toast; // 返回toast元素以便后续移除
     }
+
+
 }
 
 // 添加动画样式
