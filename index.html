@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>战区查询 - 网页版</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- 导航栏 -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="javascript:void(0)" class="logo-link" title="返回首页">
+                        <i class="fas fa-crown"></i>
+                        <span>战区查询</span>
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link active" data-page="home">
+                        <i class="fas fa-home"></i>
+                        <span>首页</span>
+                    </a>
+                    <a href="#tools" class="nav-link" data-page="tools">
+                        <i class="fas fa-tools"></i>
+                        <span>工具</span>
+                    </a>
+                    <a href="#about" class="nav-link" data-page="about">
+                        <i class="fas fa-info-circle"></i>
+                        <span>关于</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 主内容区域 -->
+        <main class="main-content">
+            <!-- 首页 -->
+            <div id="home" class="page active">
+                <div class="content-section">
+                    <div class="section-title">
+                        <i class="fas fa-gamepad"></i>
+                        <span>英雄查询</span>
+                    </div>
+
+                    <!-- 英雄搜索区域 -->
+                    <div class="search-section">
+                        <div class="search-box">
+                            <input type="text" id="hero-search" placeholder="搜索英雄...">
+                            <button id="search-btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 英雄类型筛选 -->
+                    <div class="hero-tabs">
+                        <button class="tab-btn active" data-type="all">全部</button>
+                        <button class="tab-btn" data-type="warrior">战士</button>
+                        <button class="tab-btn" data-type="mage">法师</button>
+                        <button class="tab-btn" data-type="tank">坦克</button>
+                        <button class="tab-btn" data-type="assassin">刺客</button>
+                        <button class="tab-btn" data-type="marksman">射手</button>
+                        <button class="tab-btn" data-type="support">辅助</button>
+                    </div>
+
+                    <!-- 英雄列表 -->
+                    <div class="hero-list" id="hero-list">
+                        <!-- 英雄列表将通过JavaScript动态生成 -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 工具页 -->
+            <div id="tools" class="page">
+                <div class="tools-container">
+                    <div class="tools-grid" id="tools-grid">
+                        <!-- 工具列表将通过JavaScript动态生成 -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 关于页 -->
+            <div id="about" class="page">
+                <div class="about-container">
+                    <!-- 主要关于卡片 -->
+                    <div class="about-card main-about">
+                        <div class="about-header">
+                            <div class="about-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="about-title">
+                                <h2>战区查询</h2>
+                                <p class="about-subtitle">专业的王者荣耀数据平台</p>
+                            </div>
+                        </div>
+                        <div class="about-content">
+                            <p class="about-description">
+                                战区查询是一个专注于王者荣耀游戏数据查询和分析的专业平台。我们致力于为玩家提供最准确、最全面的游戏信息，帮助您更好地了解游戏，提升游戏体验。
+                            </p>
+                            <div class="about-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">快速查询</div>
+                                    <div class="stat-label">秒级响应，快速获取英雄信息和战力数据</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">数据分析</div>
+                                    <div class="stat-label">深度分析英雄数据，提供专业的战力评估</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">移动适配</div>
+                                    <div class="stat-label">完美适配各种设备，随时随地查询数据</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 版本信息 -->
+                    <div class="version-section">
+                        <div class="version-card">
+                            <div class="version-header">
+                                <i class="fas fa-code-branch"></i>
+                                <h4>版本信息</h4>
+                            </div>
+                            <div class="version-details">
+                                <div class="version-item">
+                                    <span class="version-label">作者：</span>
+                                    <span class="version-value">莲</span>
+                                </div>    
+                                <div class="version-item">
+                                    <span class="version-label">当前版本：</span>
+                                    <span class="version-value">网页版 v1.0.0</span>
+                                </div>
+                                <div class="version-item">
+                                    <span class="version-label">更新时间：</span>
+                                    <span class="version-value">2025年08月</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 联系方式 -->
+                    <div class="contact-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-envelope"></i>
+                            <span>联系我们</span>
+                        </h3>
+                        <div class="contact-grid">
+                            <div class="contact-card">
+                                <a href="https://blog.52lian.cc/about" target="_blank" class="contact-link">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <h4>关于作者</h4>
+                                    <p>了解更多</p>
+                                </a>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fab fa-weixin"></i>
+                                </div>
+                                <h4>微信</h4>
+                                <p>XYK5525</p>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fab fa-qq"></i>
+                                </div>
+                                <h4>QQ</h4>
+                                <p>48852595</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 底部信息 -->
+                    <div class="footer-section">
+                        <div class="footer-content">
+                            <p>&copy; 2025 战区查询. 保留所有权利.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 弹窗 -->
+        <div id="popup" class="popup-overlay">
+            <div class="popup-content">
+                <div class="popup-body" id="popup-content">
+                    <!-- 弹窗内容 -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 一键回到顶部 -->
+        <div id="back-to-top" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
