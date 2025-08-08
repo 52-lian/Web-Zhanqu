@@ -1,3 +1,5 @@
+<!-- 作者：莲 作者博客：https://blog.52lian.cc 项目地址：https://github.com/52-lian/Web-Zhanqu -->
+
 # 战区查询 - 王者荣耀数据平台
 
 ## 📖 项目简介

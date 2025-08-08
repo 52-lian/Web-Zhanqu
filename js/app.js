@@ -1,3 +1,10 @@
+/*
+ * 作者：莲
+ * 作者博客：https://blog.52lian.cc
+ * 项目地址：https://github.com/52-lian/Web-Zhanqu
+ * 战区查询网页版JavaScript主文件
+ */
+
 // 应用主类
 class QianYueApp {
     constructor() {
